@@ -1,0 +1,12 @@
+Exception in thread "Device Client Monitor" java.nio.channels.ClosedSelectorException
+	at sun.nio.ch.EPollSelectorImpl.implRegister(EPollSelectorImpl.java:174)
+	at sun.nio.ch.SelectorImpl.register(SelectorImpl.java:132)
+	at java.nio.channels.spi.AbstractSelectableChannel.register(AbstractSelectableChannel.java:212)
+	at com.android.ddmlib.Client.register(Client.java:556)
+	at com.android.ddmlib.MonitorThread.addClient(MonitorThread.java:522)
+	at com.android.ddmlib.DeviceMonitor.createClient(DeviceMonitor.java:586)
+	at com.android.ddmlib.DeviceMonitor.openClient(DeviceMonitor.java:545)
+	at com.android.ddmlib.DeviceMonitor.deviceClientMonitorLoop(DeviceMonitor.java:361)
+	at com.android.ddmlib.DeviceMonitor.access$100(DeviceMonitor.java:64)
+	at com.android.ddmlib.DeviceMonitor$1.run(DeviceMonitor.java:326)
+Already running
