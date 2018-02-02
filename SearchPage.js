@@ -13,7 +13,7 @@ import {
 
 export default class SearchPage extends Component<{}> {
 	static navigationOptions = {
-		title: 'Property Finder',
+		title: 'Property Finder'
 	};
 	constructor(props) {
 		super(props);
@@ -29,7 +29,6 @@ export default class SearchPage extends Component<{}> {
 	_handleResponse = (response) => {
 		this.setState({ isLoading: false , message: '' });
 		if (response.application_response_code.substr(0, 1) === '1') {
-			console.log(response.listings.length);
 			this.props.navigation.navigate('Results', {listings: response.listings});
 		} else {
 			this.setState({ message: 'Location not recognized; please try again.'});

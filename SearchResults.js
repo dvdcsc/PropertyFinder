@@ -40,7 +40,7 @@ class ListItem extends React.PureComponent {
 
 export default class SearchResults extends Component {
 	static navigationOptions = {
-		title: 'Results',
+		title: 'Reuslt'
 	};
 
 	_keyExtractor = (item, index) => index;
